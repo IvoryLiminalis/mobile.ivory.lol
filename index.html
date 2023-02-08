@@ -5,6 +5,7 @@
 <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 <script type="text/javascript" src="../lib/konami-code.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
@@ -17,33 +18,45 @@ function Function1() {
   document.getElementById('button1').style.marginTop = '30px';
 }
 
+function Function2() {
+  document.getElementById('button1').style.marginTop = '50px';
+}
+
 function Toggle1() {
   const x = document.getElementById('one-wrap');
   const x2 = document.getElementById('two');
 	const x3 = document.getElementById('three');
+	const x4 = document.getElementById('four');
   const btn1 = document.getElementById('button1');
   if (x.style.opacity === '1' || x3.style.opacity === '1') {
     x.style.transitionDelay = '0s';
     x2.style.transitionDelay = '1s';
     x3.style.transitionDelay = '0s';
+		x4.style.transitionDelay = '0s';
     x.style.opacity = '0';
     x2.style.opacity = '1';
 		x3.style.opacity = '0';
+		x4.style.opacity = '0';
     x.style.zIndex = '0';
     x2.style.zIndex = '1';
     x3.style.zIndex = '0';
+    x4.style.zIndex = '0';
 		btn1.style.marginTop = '-2px'
 
   } else {
     x.style.transitionDelay = '1s';
     x2.style.transitionDelay = '0s';
     x3.style.transitionDelay = '0s';
+		x4.style.transitionDelay = '0s';
     x.style.opacity = '1';
     x2.style.opacity = '0';
 		x3.style.opacity = '0';
+		x4.style.opacity = '0';
     x.style.zIndex = '1';
     x2.style.zIndex = '0';
     x3.style.zIndex = '0';
+		x4.style.zIndex = '0';
+		btn1.style.marginTop = '-2px'
   }
 }
 
@@ -51,16 +64,20 @@ function ShowPage1() {
   const x = document.getElementById('one-wrap');
   const x2 = document.getElementById('two');
 	const x3 = document.getElementById('three');
+	const x4 = document.getElementById('four');
   const btn1 = document.getElementById('button1');
     x.style.transitionDelay = '1s';
     x2.style.transitionDelay = '0s';
     x3.style.transitionDelay = '0s';
+    x4.style.transitionDelay = '0s';
     x.style.opacity = '1';
     x2.style.opacity = '0';
 		x3.style.opacity = '0';
+		x4.style.opacity = '0';
     x.style.zIndex = '1';
     x2.style.zIndex = '0';
     x3.style.zIndex = '0';
+		x4.style.zIndex = '0';
 		btn1.style.marginTop = '-2px'
 }
 
@@ -69,16 +86,41 @@ function ShowPage2() {
   const x = document.getElementById('one-wrap');
   const x2 = document.getElementById('two');
 	const x3 = document.getElementById('three');
+	const x4 = document.getElementById('four');
   const btn1 = document.getElementById('button1');
     x.style.transitionDelay = '0s';
     x2.style.transitionDelay = '0s';
     x3.style.transitionDelay = '1s';
+    x4.style.transitionDelay = '0s';
     x.style.opacity = '0';
     x2.style.opacity = '0';
-		x3.style.opacity = '1';
+    x3.style.opacity = '1';
+		x4.style.opacity = '0';
     x.style.zIndex = '0';
     x2.style.zIndex = '0';
     x3.style.zIndex = '1';
+		x4.style.zIndex = '0';
+		btn1.style.marginTop = '10px'
+}
+
+function ShowPage3() {
+  const x = document.getElementById('one-wrap');
+  const x2 = document.getElementById('two');
+	const x3 = document.getElementById('three');
+	const x4 = document.getElementById('four');
+  const btn1 = document.getElementById('button1');
+    x.style.transitionDelay = '0s';
+    x2.style.transitionDelay = '0s';
+    x3.style.transitionDelay = '0s';
+    x4.style.transitionDelay = '1s';
+    x.style.opacity = '0';
+    x2.style.opacity = '0';
+    x3.style.opacity = '0';
+		x4.style.opacity = '1';
+    x.style.zIndex = '0';
+    x2.style.zIndex = '0';
+    x3.style.zIndex = '0';
+		x4.style.zIndex = '1';
 		btn1.style.marginTop = '10px'
 }
 
@@ -191,11 +233,6 @@ html::after {
 	white-space: nowrap;
 }
 
-@media screen and (max-width: 800px) {
-  #main, body {
-		font-size: 1rem;
-	}
-}
 .nav a.active {
   color: white;
 	-webkit-transition: 1s;
@@ -376,6 +413,46 @@ body {
       transform: translate(-50%, -50%);
 }
 
+#four {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  position: absolute;
+	z-index: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+#four span {
+	-webkit-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+	background-color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+  -ms-flex-pack: center;
+	justify-content: center;
+	white-space: nowrap;
+	margin-top: 10px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+  position: absolute;
+	cursor: default;
+  left: 50%;
+  border-radius: 6px;
+  text-shadow: none;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
 #three span {
 	-webkit-transition: 1s ease;
 	-o-transition: 1s ease;
@@ -524,9 +601,12 @@ margin-top: 2px;
 	</div>
 
 <div class="nav-wrap" id="nav-wrap">
-	<a onclick="ShowPage1()">welcome! <span> &#187; </span></a>
-  <a onclick="ShowPage2(); Function1()">about me!</a>
-	<div class="nav"></div>
+	<a onclick="ShowPage1()">welcome! </a>
+	<a>&#187;</a>
+  <a onclick="ShowPage2(); Function1()">about me! </a>
+	<a>&#187;</a>
+  <a onclick="ShowPage3(); Function2()">silly! :3 </a>
+<div class="nav"></div>
 </div>
 
 <section id="main">
@@ -551,6 +631,16 @@ margin-top: 2px;
 	<h1>about me:</h1>
 	<p>haiiiii!~ i'm ivory, not to be confused with the content creator i share a name with, so this is my website! i am a trans girl (she/they) with a love for shark plushies (you can guess which), and i'm currently pre-hrt because of reasons beyond my control.</p>
 	<span>fun fact: i'm also a catgirl :3</span>
+</div>
+
+<div id="four">
+	<h1>silly! :3</h1>
+	<p>meow! here are some of my friends i decided to feature here! :3</p>
+	<p>jaden (she/her)</p>
+	<p>inspire (he/they/she)</p>
+	<p>avery (redacted for privacy)</p>
+	<p>ray (aka 1000dumplings, she/they)</p>
+	<p>newton/brenda j. adams (he/she)</p>
 </div>
 </section>
 </body>
