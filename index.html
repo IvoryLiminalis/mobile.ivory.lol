@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ivory.lol</title>
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+<script type="text/javascript" src="../lib/konami-code.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+
+function loadedstyling() {
+  document.getElementById('main').style.opacity = '1';
+}
+
+function Function1() {
+  document.getElementById('button1').style.marginTop = '30px';
+}
+
+function Toggle1() {
+  const x = document.getElementById('one-wrap');
+  const x2 = document.getElementById('two');
+	const x3 = document.getElementById('three');
+  const btn1 = document.getElementById('button1');
+  if (x.style.opacity === '1' || x3.style.opacity === '1') {
+    x.style.transitionDelay = '0s';
+    x2.style.transitionDelay = '1s';
+    x3.style.transitionDelay = '0s';
+    x.style.opacity = '0';
+    x2.style.opacity = '1';
+		x3.style.opacity = '0';
+    x.style.zIndex = '0';
+    x2.style.zIndex = '1';
+    x3.style.zIndex = '0';
+		btn1.style.marginTop = '-2px'
+
+  } else {
+    x.style.transitionDelay = '1s';
+    x2.style.transitionDelay = '0s';
+    x3.style.transitionDelay = '0s';
+    x.style.opacity = '1';
+    x2.style.opacity = '0';
+		x3.style.opacity = '0';
+    x.style.zIndex = '1';
+    x2.style.zIndex = '0';
+    x3.style.zIndex = '0';
+  }
+}
+
+function ShowPage1() {
+  const x = document.getElementById('one-wrap');
+  const x2 = document.getElementById('two');
+	const x3 = document.getElementById('three');
+  const btn1 = document.getElementById('button1');
+    x.style.transitionDelay = '1s';
+    x2.style.transitionDelay = '0s';
+    x3.style.transitionDelay = '0s';
+    x.style.opacity = '1';
+    x2.style.opacity = '0';
+		x3.style.opacity = '0';
+    x.style.zIndex = '1';
+    x2.style.zIndex = '0';
+    x3.style.zIndex = '0';
+		btn1.style.marginTop = '-2px'
+}
+
+
+function ShowPage2() {
+  const x = document.getElementById('one-wrap');
+  const x2 = document.getElementById('two');
+	const x3 = document.getElementById('three');
+  const btn1 = document.getElementById('button1');
+    x.style.transitionDelay = '0s';
+    x2.style.transitionDelay = '0s';
+    x3.style.transitionDelay = '1s';
+    x.style.opacity = '0';
+    x2.style.opacity = '0';
+		x3.style.opacity = '1';
+    x.style.zIndex = '0';
+    x2.style.zIndex = '0';
+    x3.style.zIndex = '1';
+		btn1.style.marginTop = '10px'
+}
+
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<style>
+
+html {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+	height: 100%;
+  color: white;
+  font: 2vw Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+}
+
+html::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -o-linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), -o-linear-gradient(left, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 200;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.nav-wrap {
+  overflow: hidden;
+	background-color: #323232;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	-webkit-animation: slideInDown 1s ease 0s 1 normal forwards;
+	        animation: slideInDown 1s ease 0s 1 normal forwards;
+}
+
+@-webkit-keyframes slideInDown {
+	0% {
+		-webkit-transform: translateY(-250px);
+		        transform: translateY(-250px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+}
+
+@keyframes slideInDown {
+	0% {
+		-webkit-transform: translateY(-250px);
+		        transform: translateY(-250px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+}
+
+.nav {
+  overflow: hidden;
+	background: -o-linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #00d2ff), color-stop(0, #ffa6b9), color-stop(0, white), color-stop(0, #ffa6b9), color-stop(0, #00d2ff));
+	background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+  padding: 14px 16px;
+	white-space: nowrap;
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	white-space: nowrap;
+}
+
+.nav a:hover {
+  color: white;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 800px) {
+  #main, body {
+		font-size: 1rem;
+	}
+}
+.nav a.active {
+  color: white;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	white-space: nowrap;
+}
+
+.nav-wrap a:hover {
+  color: white;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	white-space: nowrap;
+}
+
+.nav-wrap a.active {
+  color: white;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	white-space: nowrap;
+}
+
+::-moz-selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+
+::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+
+#one-wrap {
+  position: absolute;
+	z-index: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  opacity: 1
+}
+
+#secret2 {
+  -webkit-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 6px;
+	
+}
+
+.arrow::hover, .down::hover {
+  padding: 12px;
+	border: solid white;
+	-webkit-transition: border-width 3s cubic-bezier(.47,1.64,.41,.8);
+	-o-transition: border-width 3s cubic-bezier(.47,1.64,.41,.8);
+	transition: border-width 3s cubic-bezier(.47,1.64,.41,.8);
+  border-width: 0 8px 8px 0;
+}
+
+.down {
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#button1 {
+  position: absolute;
+  left: 50%;
+  top: 68%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  -o-transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  z-index: 1;
+  -webkit-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+	cursor: pointer;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#button2 {
+  position: absolute;
+  left: 50%;
+  top: 76%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  -o-transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  z-index: 4;
+  -webkit-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+body {
+	height: 100%;
+  overflow: hidden;
+  background-image: url('/img/bg1.svg');
+  background-position: top center;
+  background-attachment: fixed;
+	background-size: cover;
+  background-repeat: no-repeat;
+	font-size: 2vw;
+}
+
+#main {
+	opacity: 0;
+  -webkit-transition: opacity 3s ease;
+  -o-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+	font-size: 2vw;
+}
+
+#two {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  position: absolute;
+	z-index: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+#three {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  position: absolute;
+	z-index: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+#three span {
+	-webkit-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+	background-color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+  -ms-flex-pack: center;
+	justify-content: center;
+	white-space: nowrap;
+	margin-top: 10px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+  position: absolute;
+	cursor: default;
+  left: 50%;
+  border-radius: 6px;
+  text-shadow: none;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+#three span:hover {
+	background-color: rgba(255, 255, 255, 0);
+	-webkit-filter: none;
+	        filter: none;
+  text-shadow: 0 0 5px #C8C8C8;
+	cursor: default;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+#container-wrap-wrap {
+  overflow: hidden;
+	-webkit-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+	transition: opacity 3s ease;
+  background-image: url('/img/bg1.svg');
+  background-position: top center;
+  background-attachment: fixed;
+	background-size: cover;
+  background-repeat: no-repeat;
+	opacity: 1;
+}
+
+#container-wrap {
+	height: 100%;
+  overflow: hidden;
+  background: -o-radial-gradient(rgba(255, 255, 255, 1), black 120%);
+  background: radial-gradient(rgba(255, 255, 255, 1), black 120%);
+	-webkit-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+	transition: opacity 3s ease;
+	opacity: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background: -o-linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #00d2ff), color-stop(0, #ffa6b9), color-stop(0, white), color-stop(0, #ffa6b9), color-stop(0, #00d2ff));
+background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+padding: 20px 30px;
+width: 30px;
+height: 20px;
+-webkit-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+-o-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+-webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+-webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+        transform: translateY(0);
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+white-space: nowrap;
+cursor: pointer;
+border-radius: 6px;
+margin-top: 2px;
+}
+
+.btn:hover{
+white-space: nowrap;
+overflow: hidden;
+padding: 20px 80px;
+-webkit-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+-o-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+margin-top: 2px;
+}
+
+#one span {
+	-webkit-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+	background-color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+  -ms-flex-pack: center;
+	justify-content: center;
+	white-space: nowrap;
+	margin-top: 10px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+  position: absolute;
+	cursor: default;
+  left: 50%;
+  border-radius: 6px;
+  text-shadow: none;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+#one span:hover {
+	background-color: rgba(255, 255, 255, 0);
+  text-shadow: 0 0 5px #C8C8C8;
+	cursor: default;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+</style>
+</head>
+<body onload="loadedstyling()">
+	<div id="container-wrap-wrap">
+		<div id="container-wrap"></div>
+	</div>
+
+<div class="nav-wrap" id="nav-wrap">
+	<a onclick="ShowPage1()">welcome! <span> &#187; </span></a>
+  <a onclick="ShowPage2(); Function1()">about me!</a>
+	<div class="nav"></div>
+</div>
+
+<section id="main">
+	<section id="one-wrap">
+<div id="one">
+	<h1>welcome!</h1>
+	<p>we're all in hell anyways, so how about we enjoy the show?</p>
+	<span>click the trans flag :3</span>
+	</section>
+</div>
+<div id="button1">
+  <i class="arrow down"></i>
+	<button onclick="Toggle1()" class="btn"></button>
+</div>
+<div class="blurbox"></div>
+<div id="two">
+	<h1>know this:</h1>
+	<p>trans rights are valid. trans people are valid. if you don't like that fact, leave this website and don't come back.</p>
+</div>
+
+<div id="three">
+	<h1>about me:</h1>
+	<p>haiiiii!~ i'm ivory, not to be confused with the content creator i share a name with, so this is my website! i am a trans girl (she/they) with a love for shark plushies (you can guess which), and i'm currently pre-hrt because of reasons beyond my control.</p>
+	<span>fun fact: i'm also a catgirl :3</span>
+</div>
+</section>
+</body>
+</html>
