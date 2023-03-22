@@ -456,6 +456,8 @@ button, input[type="submit"], input[type="reset"] {
   border-radius: 6px;
   margin-top: 2px;
   border-color: black;
+	border-style: solid;
+	border-width: 2px;
   }
   
   .btn:hover{
@@ -467,7 +469,9 @@ button, input[type="submit"], input[type="reset"] {
   transition : 400ms cubic-bezier(.34,1.56,.64,1);
   margin-top: 2px;
   border-color: black;
-  }
+	border-style: solid;
+	border-width: 2px;
+}
   
   #one span {
       -webkit-transition: 1s ease;
