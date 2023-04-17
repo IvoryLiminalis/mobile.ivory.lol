@@ -517,7 +517,7 @@ button, input[type="submit"], input[type="reset"] {
 	transform: skew(-20deg);
   padding: 16px;
   position: fixed;
-  left: 33.3%;
+  left: 50%;
   bottom: 30px;
 }
 
