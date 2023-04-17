@@ -10,6 +10,12 @@ function Function2() {
   document.getElementById('button1').style.marginTop = '50px';
 }
 
+function validation() {
+  var x = document.getElementById("notif");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
 function Toggle1() {
   const x = document.getElementById('one-wrap');
   const x2 = document.getElementById('two');
