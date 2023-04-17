@@ -525,7 +525,7 @@ button, input[type="submit"], input[type="reset"] {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
-	animation-timing-function: ease-in-out;
+	animation-timing-function: ease;
 }
 
 @-webkit-keyframes fadein {
