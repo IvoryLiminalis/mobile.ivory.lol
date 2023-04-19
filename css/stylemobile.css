@@ -518,11 +518,10 @@ button, input[type="submit"], input[type="reset"] {
     bottom: 30px;
 		left: 0%;
 }
-
 #notif.show {
   visibility: visible;
-  -webkit-animation: fadein 1.2s, fadeout 1.2s 5s;
-  animation: fadein 1.2s, fadeout 1.2s 5s;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 	animation-timing-function: ease;
 }
 
