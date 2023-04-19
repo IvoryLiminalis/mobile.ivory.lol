@@ -521,27 +521,27 @@ button, input[type="submit"], input[type="reset"] {
 
 #notif.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  -webkit-animation: fadein 1.2s, fadeout 1.2s 5s;
+  animation: fadein 1.2s, fadeout 1.2s 5s;
 	animation-timing-function: ease;
 }
 
 @-webkit-keyframes fadein {
-  from {left: 100%; opacity: 1;}
-  to {left: 0%; opacity: 1;}
+  from {left: 100; opacity: 1;}
+  to {left: 0; opacity: 1;}
 }
 
 @keyframes fadein {
-  from {left: 100%; opacity: 1;}
-  to {left: 0%; opacity: 1;}
+  from {left: 100; opacity: 1;}
+  to {left: 0; opacity: 1;}
 }
 
 @-webkit-keyframes fadeout {
-  from {left: 0%; opacity: 1;}
-  to {left: 100%; opacity: 1;}
+  from {left: 0; opacity: 1;}
+  to {left: 100; opacity: 1;}
 }
 
 @keyframes fadeout {
-  from {left: 0%; opacity: 1;}
-  to {left: 100%; opacity: 1;}
+  from {left: 0; opacity: 1;}
+  to {left: 100; opacity: 1;}
 }
