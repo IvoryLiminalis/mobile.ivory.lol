@@ -516,6 +516,7 @@ button, input[type="submit"], input[type="reset"] {
     text-align: center;
     position: fixed;
     bottom: 30px;
+		left: 0%;
 }
 
 #notif.show {
