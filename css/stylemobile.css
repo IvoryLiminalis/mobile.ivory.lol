@@ -509,16 +509,13 @@ button, input[type="submit"], input[type="reset"] {
   }
 
 #notif {
-  visibility: hidden;
-  min-width: 250px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-	transform: skew(-20deg);
-  padding: 16px;
-  position: fixed;
-  left: 50%;
-  bottom: 30px;
+    visibility: hidden;
+    min-width: 290px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
 }
 
 #notif.show {
@@ -529,21 +526,21 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 @-webkit-keyframes fadein {
-  from {bottom: -100px; opacity: 1;}
-  to {bottom: 30px; opacity: 1;}
+  from {left: 100%; opacity: 1;}
+  to {left: 0%; opacity: 1;}
 }
 
 @keyframes fadein {
-  from {bottom: -100px; opacity: 1;}
-  to {bottom: 30px; opacity: 1;}
+  from {left: 100%; opacity: 1;}
+  to {left: 0%; opacity: 1;}
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: -100px; opacity: 1;}
+  from {left: 0%; opacity: 1;}
+  to {left: 100%; opacity: 1;}
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: -100px; opacity: 1;}
+  from {left: 0%; opacity: 1;}
+  to {left: 100%; opacity: 1;}
 }
