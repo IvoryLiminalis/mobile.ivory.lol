@@ -534,17 +534,17 @@ button, input[type="submit"], input[type="reset"] {
   to {left: 0px; opacity: 1;}
 }
 
-@keyframes fadein {
+@keyframes mfadein {
   from {left: -500px; opacity: 1;}
   to {left: 0px; opacity: 1;}
 }
 
-@-webkit-keyframes fadeout {
+@-webkit-keyframes mfadeout {
   from {left: 0px; opacity: 1;}
   to {left: -500px; opacity: 1;}
 }
 
-@keyframes fadeout {
+@keyframes mfadeout {
   from {left: 0px; opacity: 1;}
   to {left: -500px; opacity: 1;}
 }
