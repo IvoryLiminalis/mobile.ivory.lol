@@ -521,6 +521,9 @@ button, input[type="submit"], input[type="reset"] {
     bottom: 30px;
 		left: 0%;
 		visibility: hidden;
+		border-top: 5px solid #f5a9b8;
+		border-right: 5px solid #f5a9b8;
+		border-bottom: 5px solid #f5a9b8;
 }
 
 #notif.show {
