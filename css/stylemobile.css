@@ -520,6 +520,7 @@ button, input[type="submit"], input[type="reset"] {
     position: fixed;
     bottom: 30px;
 		left: 0%;
+		visibility: hidden;
 }
 
 #notif.show {
