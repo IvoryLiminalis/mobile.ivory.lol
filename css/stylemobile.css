@@ -528,8 +528,8 @@ button, input[type="submit"], input[type="reset"] {
 
 #notif.show {
   visibility: visible;
-  -webkit-animation: mfadein 1.2s, mfadeout 1.2s 2.5s;
-  animation: mfadein 1.2s, mfadeout 1.2s 2.5s;
+  -webkit-animation: mfadein 1.2s, mfadeout 1.2s 4.5s;
+  animation: mfadein 1.2s, mfadeout 1.2s 4.5s;
 	animation-timing-function: ease;
 }
 
