@@ -130,7 +130,7 @@ function ShowPage3() {
     x3.style.transitionDelay = '0s';
 		x4.style.transitionDelay = '1s';
 		x5.style.transitionDelay = '0s';
-		x4.style.pointerEvents = "initial";
+		x4.style.pointerEvents = "auto";
 		x5.style.pointerEvents = "none";
     x.style.opacity = '0';
     x2.style.opacity = '0';
@@ -158,7 +158,7 @@ function ShowPage4() {
 		x4.style.transitionDelay = '0s';
 		x5.style.transitionDelay = '1s';
 		x4.style.pointerEvents = "none";
-		x5.style.pointerEvents = "initial";
+		x5.style.pointerEvents = "auto";
     x.style.opacity = '0';
     x2.style.opacity = '0';
 		x3.style.opacity = '0';
