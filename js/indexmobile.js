@@ -13,7 +13,7 @@ function Function2() {
 function validation() {
   var x = document.getElementById("notif");
   x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 6000);
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5700);
 }
 
 function Toggle1() {
