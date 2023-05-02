@@ -314,6 +314,7 @@ button, input[type="submit"], input[type="reset"] {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+		pointer-events: none;
   }
 
   #four {
@@ -328,6 +329,7 @@ button, input[type="submit"], input[type="reset"] {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+		pointer-events: none;
   }
   
   #four span {
