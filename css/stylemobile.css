@@ -302,7 +302,7 @@ button, input[type="submit"], input[type="reset"] {
         transform: translate(-50%, -50%);
   }
 
-	#five {
+	#five * {
     opacity: 0;
     -webkit-transition: opacity 1s ease;
     -o-transition: opacity 1s ease;
@@ -317,7 +317,7 @@ button, input[type="submit"], input[type="reset"] {
 		pointer-events: none;
   }
 
-  #four {
+  #four * {
     opacity: 0;
     -webkit-transition: opacity 1s ease;
     -o-transition: opacity 1s ease;
